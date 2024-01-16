@@ -85,8 +85,8 @@ void Bank::perData()
 }
 void Bank::show(){
 	for(int i=0;i<total;i++){
-		cout<<"Data of person "<<i+1<<endl;
-		cout<<"1. Name     | "<<person[i].name<<endl;
+	cout<<"Data of person "<<i+1<<endl;
+	cout<<"1. Name     | "<<person[i].name<<endl;
         cout<<"2. ID       | "<<person[i].ID<<endl;
         cout<<"3. Address  | "<<person[i].address<<endl;
         cout<<"4. Contact  | "<<person[i].contact<<endl;
@@ -102,16 +102,15 @@ void Bank::update(){
 		if(id==person[i].ID)
         {
         	cout<<"_________________________"<<endl;
-			cout<<"Present Data of person "<<i+1<<endl;
-			cout<<"1. Name     |"<<person[i].name<<endl;
+		cout<<"Present Data of person "<<i+1<<endl;
+		cout<<"1. Name     |"<<person[i].name<<endl;
         	cout<<"2. ID       |"<<person[i].ID<<endl;
         	cout<<"3. Address  |"<<person[i].address<<endl;
         	cout<<"4. Contact  |"<<person[i].contact<<endl;
         	cout<<"5. Balance  |"<<person[i].cash<<endl;
         	cout<<"_________________________"<<endl;
-
-			cout<<"\nEnter new data"<<endl;
-			cout<<"1. Enter New Name    : "; cin>>person[i].name;
+		cout<<"\nEnter new data"<<endl;
+		cout<<"1. Enter New Name    : "; cin>>person[i].name;
         	cout<<"3. Enter New Address : "; cin>>person[i].address;
         	cout<<"4. Enter New Contact : "; cin>>person[i].contact;
         	cout<<"_________________________"<<endl<<endl;
@@ -171,9 +170,9 @@ void Bank::transactions(){
 			cout<<"Name		| "<<person[i].name<<endl;
         	cout<<"Balance		| "<<person[i].cash<<endl;
         	cout<<"_________________________"<<endl;
-            cout<<"Press 1 to DEPOSIT"<<endl;
-		    cout<<"Press 2 to WITHDRAW"<<endl;
-			cout<<"Enter your choice : ";cin>>ch;
+            	cout<<"Press 1 to DEPOSIT"<<endl;
+		cout<<"Press 2 to WITHDRAW"<<endl;
+		cout<<"Enter your choice : ";cin>>ch;
         	cout<<"_________________________"<<endl;
 
 		    switch(ch){
@@ -219,15 +218,11 @@ void Bank::transactions(){
 	 system("CLS");
 }
 void Bank::del(){
-
 	char ch;
 	cout<<"Press 1 to remove a record"<<endl;
 	cout<<"Press 2 to remove ALL record"<<endl;
 	cout<<"_________________________"<<endl;
 	cout<<"Enter yor choice : ";cin>>ch ;cout<<endl;
-	
-	
-
 	switch(ch)
     {
 	        case '1':enter();cout<<"Remove : ";cin>>id;
@@ -241,8 +236,8 @@ void Bank::del(){
                             person[j].cash=person[j+1].cash;
                             total--;
                             cout<<"_____________________"<<endl;
-	 	            		cout<<"RECORD DELETED"<<endl;
-							cout<<"_____________________"<<endl;
+	 	            cout<<"RECORD DELETED"<<endl;
+			    cout<<"_____________________"<<endl;
                             break;
                             }
                         } 
@@ -250,9 +245,9 @@ void Bank::del(){
                     }
 	                break;
 	        case '2':total=0;
-					cout<<"_____________________"<<endl;
-	 	            cout<<"All RECORDS DELETED"<<endl;
-					cout<<"_____________________"<<endl;
+			cout<<"_____________________"<<endl;
+	 	        cout<<"All RECORDS DELETED"<<endl;
+			cout<<"_____________________"<<endl;
 	         	    break;
 	        default: invalid();
                     break;
@@ -261,9 +256,9 @@ void Bank::del(){
 }
 
 int main(){
-	Bank SBI;
+	Bank Ambikesh;
 	system("CLS");
-	SBI.choice();
+	Ambikesh.choice();
 	return 0;
 }
 
