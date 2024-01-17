@@ -28,12 +28,3 @@ SimpleBank++ is a C++ project implementing a basic banking. This program allows 
 
 - Clear the console screen using "system("CLS")".
 - Inline functions for displaying messages based on specific conditions.
-
-## Usage
-
-1. Run the compiled executable.
-2. Follow the on-screen menu to perform various banking operations.
-
-## Contributing
-
-Contributions are welcome! If you find a bug or have suggestions for improvements, feel free to open an issue or create a pull request.
